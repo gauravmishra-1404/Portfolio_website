@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    background-color: #ac694d;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    height: 150px;
+    background-image: url(./nav_back.jpg);
+    border-bottom: 2px solid black;
+    border-radius: 40px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 800px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#home:hover {
+    background: linear-gradient(to bottom right, #c3bf94, #d2bbb7);
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+}
+
+#social:hover{
+    background: linear-gradient(to bottom right, #c3bf94, #d2bbb7);
+    border-bottom:1px solid black;
+    border-radius: 4px;
+}
+
+#skill:hover {
+    background: linear-gradient(to bottom right, #c3bf94,#d2bbb7);
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+}
+
+#project:hover {
+    background: linear-gradient(to bottom right, #c3bf94, #d2bbb7);
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+}
+
+#about:hover {
+    background: linear-gradient(to bottom right, #c3bf94, #d2bbb7);
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+}
+
+#contact:hover {
+    background: linear-gradient(to bottom right, #c3bf94, #d2bbb7);
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+}
+
+content{
+    display: flex;
+    height: 450px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(46, 40, 40, 0.573) ;
+    border-bottom: 2px solid black;
+    border-radius: 40px;
+}
+content>.img{
+    border: 5px solid rgb(34, 31, 31);
+    border-radius: 15px;
+}
+content>.intro{
+    height:350px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    background: linear-gradient(to bottom right, #b2c43a, #5b4fe0);
+    font-size: larger;
+    border: 2px solid black;
+    font-weight:bolder;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: rgb(4, 4, 29);
+}
+content>.intro>.h{
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+content>.intro>.h>button{
+    background: linear-gradient(to bottom right, #b2c43a, #5b4fe0);
+    border:none;
+    border-radius: 5px;
+}
+Social{
+    height:150px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom right, #4d7a2b, #3d3876);
+    border-bottom: 2px solid black;
+    border-radius: 40px;
+}
+
+Social>#fun{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+Social>.social{
+    width:800px;
+}
+Social>.social>.sociallink{
+    margin-left:80px;
+    
+}
+
+skill{
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-radius: 40px;
+}
+
+skill>.skillblock{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(to bottom right, #dd9e93, #2a795c);
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+skill>.skill{
+    font-size: x-large;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #c44e3a, #5d598b);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.card{
+    height:300px;
+    width:300px;
+    margin:60px;
+    perspective: 1000px;
+    
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    height:100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+.microsoft>.card-inner>.card-front>h1{
+    margin-left: 30px;
+}
+.card:hover .card-inner{
+    transform: rotateY(-180deg);
+}
+
+.card-front, .card-back{    
+    position: absolute;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    backface-visibility: hidden;
+    background: linear-gradient(to bottom right, #ae4b3a,#5d598b);
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.PROGRAMMING>.card-inner>.card-front>h1{
+    margin-left: 15px;
+}
+
+.website>.card-inner>.card-front>h1 {
+    margin-left: 15px;
+}
+
+.graphics>.card-inner>.card-front>h1 {
+    margin-left: 45px;
+}
+
+.physical>.card-inner>.card-front>h1 {
+    margin-left: 45px;
+}
+
+.card-back{
+    background: linear-gradient(to bottom right, #952a17, #555465);
+    color: #fff;
+    transform: rotateY(180deg);
+   font-size: larger;
+   font-weight: bold;
+}
+
+.card-back>ul>li{
+    margin-bottom: 5px;
+}
+
+
+project>.proj{
+    margin-top: 5px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #4d7a2b, #555465);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+project>.proj>h1{
+    font-size:xx-large;
+    font-weight: bolder;
+}
+
+project>.myprojects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right,#555465,#c44e3a);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom: 2px solid black;
+}
+
+project>.myprojects>.card1{
+    margin: 25px;
+    background: linear-gradient(to bottom right left, #4d7a2b, #555465, #c44e3a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+about{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom right ,#5b7529, #2a5d90);
+    border-radius: 40px;
+    border-bottom: 2px solid black;
+}
+about>.aboutv{
+    border: 2px solid black;
+    border-radius: 15px;
+}
+about>.about{
+    width:700px;
+    font-size: medium;
+    font-style: italic;
+    margin-top: 15px;
+    background: linear-gradient(to bottom left, #829a6f, #555465);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    align-items: center;
+    background: linear-gradient(to bottom right, #2f819c, #672a90);
+    border-radius: 40px;
+}
+copy>h5{
+    display: flex;
+    justify-content: center;
+    background-color: #829a6f;
+}
