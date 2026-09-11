@@ -25,7 +25,7 @@ if (footerVisitors && visitorCount) {
     .then((res) => (res.ok ? res.json() : Promise.reject()))
     .then((data) => {
       visitorCount.textContent = data.count;
-      footerVisitors.hidden = false;
+      footerVisitors.classList.add("is-visible");
     })
     .catch(() => {
       // leave it hidden

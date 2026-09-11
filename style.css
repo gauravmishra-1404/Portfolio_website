@@ -507,7 +507,7 @@ h1, h2, h3 { margin: 0; }
 }
 
 .footer-visitors {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 7px;
   font-family: var(--font-mono);
@@ -515,6 +515,7 @@ h1, h2, h3 { margin: 0; }
   color: var(--text-45);
   margin-bottom: 14px;
 }
+.footer-visitors.is-visible { display: flex; }
 .footer-visitors #visitorCount { color: var(--accent); }
 
 .footer-copy {
