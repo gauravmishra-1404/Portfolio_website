@@ -15,3 +15,19 @@ if (navToggle && navLinks) {
     });
   });
 }
+
+// Live visitor count, served by GoatCounter's public counter endpoint.
+// Stays hidden if the site's "allow visitor counter" setting isn't on yet, or the request fails.
+const footerVisitors = document.querySelector("#footerVisitors");
+const visitorCount = document.querySelector("#visitorCount");
+if (footerVisitors && visitorCount) {
+  fetch("https://gauravmishra.goatcounter.com/counter/TOTAL.json")
+    .then((res) => (res.ok ? res.json() : Promise.reject()))
+    .then((data) => {
+      visitorCount.textContent = data.count;
+      footerVisitors.hidden = false;
+    })
+    .catch(() => {
+      // leave it hidden
+    });
+}

@@ -503,8 +503,19 @@ h1, h2, h3 { margin: 0; }
   font-family: var(--font-mono);
   font-size: 12px;
   color: var(--text-45);
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
+
+.footer-visitors {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--text-45);
+  margin-bottom: 14px;
+}
+.footer-visitors #visitorCount { color: var(--accent); }
 
 .footer-copy {
   font-family: var(--font-mono);
