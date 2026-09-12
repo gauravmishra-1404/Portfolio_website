@@ -64,6 +64,25 @@
       <div class="timeline">
 
         <div class="tl-entry">
+          <div class="tl-date">SEP 2026<br>&mdash; PRESENT</div>
+          <div class="tl-marker"><span class="tl-dot pulse-dot"></span><span class="tl-line"></span></div>
+          <div class="tl-content">
+            <h3>Creator &mdash; Open Source</h3>
+            <div class="tl-meta">RubberAI (AI Coding Observability) &middot; Remote &middot; <a href="https://gauravmishra-1404.github.io/rubberai_landing/" target="_blank" rel="noopener">rubberai_landing</a></div>
+            <ul>
+              <li>Built RubberAI, an open-source platform that records what AI coding agents actually do &mdash; every prompt, the tokens it cost, the files it changed, and the diff &mdash; across any IDE, agent, or model.</li>
+              <li>Designed it as a Go modular monolith with an embedded Svelte dashboard on PostgreSQL: one binary plus a database, no LLM proxy, Kafka, Redis, or cloud account required.</li>
+              <li>Built the versioned HTTP ingestion pipeline (auth &#8594; rate limit &#8594; validate &#8594; price &#8594; privacy &#8594; idempotent insert), keyed on (project_id, event_id) so retries never double-count.</li>
+              <li>Shipped the Claude Code adapter (reference implementation) and a Codex OpenTelemetry integration, plus a dependency-free Python SDK and an optional disk-buffered collector for delivery during outages.</li>
+              <li>Published a pre-built image on AWS ECR Public and a live demo alongside the landing page.</li>
+            </ul>
+            <div class="tags">
+              <span>Go</span><span>PostgreSQL</span><span>Svelte</span><span>Python</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-entry">
           <div class="tl-date">MAY 2026<br>&mdash; PRESENT</div>
           <div class="tl-marker"><span class="tl-dot pulse-dot"></span><span class="tl-line"></span></div>
           <div class="tl-content">
@@ -220,6 +239,10 @@
         <a class="project-card" href="https://bodhsea.in/" target="_blank" rel="noopener">
           <h3>Bodh Sea</h3>
           <p>Full-stack blogging &amp; micro-social platform &mdash; built and run solo, live in production.</p>
+        </a>
+        <a class="project-card" href="https://gauravmishra-1404.github.io/rubberai_landing/" target="_blank" rel="noopener">
+          <h3>RubberAI</h3>
+          <p>Open-source observability for AI coding agents &mdash; every prompt, cost, file, and diff, across any IDE or model.</p>
         </a>
         <a class="project-card" href="https://gauravmishra-1404.github.io/Weather-app/" target="_blank" rel="noopener">
           <h3>Weather App</h3>
